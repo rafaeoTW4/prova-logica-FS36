@@ -1,4 +1,4 @@
-import usuarios from './prova-logica-FS36/login';
+import usuarios from '';    //Inserir  o caminho para o arquivo js que contém o array
 
         
         document.getElementById('loginForm').addEventListener('submit', function(event) {
@@ -18,3 +18,22 @@ import usuarios from './prova-logica-FS36/login';
                 alert('Email ou senha inválidos!');
             }
         });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const togglePassword = document.getElementById('togglePassword');
+            const password = document.getElementById('senha');
+        
+            if (togglePassword && password) {
+                togglePassword.addEventListener('click', () => {
+                    // Toggle the type attribute
+                    const type = password.type === 'password' ? 'text' : 'password';
+                    password.setAttribute('type', type);
+        
+                    // Toggle the eye icon
+                    togglePassword.classList.toggle('fa-eye');
+                    togglePassword.classList.toggle('fa-eye-slash');
+                });
+            }
+        });
+        
+        

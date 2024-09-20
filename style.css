@@ -36,15 +36,31 @@ main {
 }
 
 .input-box {
-    width: 100%;
+    position: relative;
     margin-bottom: 15px;
-    font-family: "Permanent Marker", cursive;
+    width: 100%;
 }
 
 .input-box input {
     width: 100%;
     padding: 10px;
+    padding-right: 40px; /* Espaço para o ícone de olho */
     font-family: "Permanent Marker", cursive;
+}
+
+.password-box {
+    position: relative;
+    width: 100%;
+}
+
+.password-box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: #333; /* Cor do ícone */
 }
 
 .btn-login {
