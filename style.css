@@ -17,7 +17,6 @@ main {
     height: 100%;
     position: relative;
     z-index: 1; /* Para garantir que fique acima da imagem de fundo */
-    
 }
 
 .form-box {
@@ -28,11 +27,16 @@ main {
     font-family: "Permanent Marker", cursive;
     z-index: 2; /* Garante que o formulário fique acima do fundo */
     background: linear-gradient(to bottom right, #f0f0ef, #dda602);
-    
+    width: 100%;
+    max-width: 400px; /* Ajuste o valor conforme necessário */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .input-box {
-    position: relative;
+    width: 100%;
     margin-bottom: 15px;
     font-family: "Permanent Marker", cursive;
 }
@@ -40,23 +44,22 @@ main {
 .input-box input {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
     font-family: "Permanent Marker", cursive;
 }
 
 .btn-login {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #000; /* Preto */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-
+    font-size: 16px;
 }
 
 .btn-login:hover {
-    background-color: #0056b3;
+    background-color: #333; /* Cinza escuro para o efeito hover */
 }
 
 .lembrar-senha {
@@ -64,8 +67,10 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 h2 {
     font-family: "Permanent Marker", cursive;
+    margin-bottom: 20px;
 }
